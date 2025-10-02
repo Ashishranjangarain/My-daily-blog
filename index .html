@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Daily Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 My Daily Blog</h1>
+    <nav>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#" id="loginLink">Login</a>
+      <a href="#" id="logoutLink" style="display:none;">Logout</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="auth-section" id="authSection">
+      <h2>Login / Sign Up</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </section>
+
+    <section class="new-post" id="postSection" style="display:none;">
+      <h2>Write a New Blog</h2>
+      <textarea id="postContent" placeholder="Write your blog post here..."></textarea>
+      <button id="publishBtn">Publish</button>
+    </section>
+
+    <h2>📚 Recent Posts</h2>
+    <div id="posts"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 My Daily Blog | Made with ❤️ by You</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
